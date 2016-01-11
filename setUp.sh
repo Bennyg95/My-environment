@@ -63,5 +63,18 @@ echo
 sudo apt-get install cmus
 
 clear
+echo "*******************************************"
+echo "Installing w3m"
+echo
+sudo apt-get install w3m
+
+clear
+echo "*******************************************"
+
+
+cp .bashrc ~/.bashrc
+
+
+clear
 echo "DONE!"
 echo
