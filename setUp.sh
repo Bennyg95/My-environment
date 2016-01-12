@@ -70,8 +70,11 @@ sudo apt-get install w3m
 
 clear
 echo "*******************************************"
+echo "Installing tmux terminal"
+echo
+sudo apt-get install tmux
 
-
+clear
 cp .bashrc ~/.bashrc
 
 
