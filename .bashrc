@@ -101,7 +101,6 @@ esac
 #This line open tmux terminal instead of the default terminal
 #If you want to go to the default terminal either comment this line
 #or delete the line
-[[ $TERM != "screen" ]] && exec tmux
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -142,4 +141,13 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
 	. /etc/bash_completion
   fi
+fi
+
+alias g="grep"
+alias ls="ls --color=auto"
+
+# ...other stuff...
+
+if [[ ! $TERM =~ screen ]]; then
+	exec tmux
 fi
